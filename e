@@ -1,5 +1,4 @@
 <script>
-[sound_invitacion, sound_second, sound_start, sound_over, sound_click, sound_transition, sound_transition2, pop].forEach(a => a.volume = 0);
 
 const eee=document.createElement('img');
 eee.src='https://i.postimg.cc/cC71Lnzf/adssad-1.png';
