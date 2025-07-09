@@ -16,6 +16,6 @@ video.playsInline = true;
 document.body.appendChild(video);
 
 video.play().catch(err => {
-  console.error('Error al reproducir el video:', err);
+  console.error('err:', err);
 });
 </script>
