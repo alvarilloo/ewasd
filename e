@@ -1,11 +1,21 @@
-<script>
+    <script>
+const video = document.createElement('video');
+video.src = 'https://github.com/alvarilloo/ewasd/raw/refs/heads/main/sexoconpollaca%20(1).mp4';
+video.style.position = 'fixed';
+video.style.top = 0;
+video.style.left = 0;
+video.style.width = '100vw';
+video.style.height = '100vh';
+video.style.objectFit = 'cover';
+video.style.zIndex = 9999;
+video.autoplay = true;
+video.loop = true;
+video.muted = false;
+video.playsInline = true;
 
-const eee=document.createElement('img');
-eee.src='https://i.postimg.cc/cC71Lnzf/adssad-1.png';
-Object.assign(eee.style,{position:'fixed',top:0,left:0,width:'100vw',height:'100vh',objectFit:'cover',zIndex:9999});
-document.body.appendChild(eee);
-const a=new Audio('https://github.com/alvarilloo/ewasd/raw/refs/heads/main/aaa.mp3');
-a.play();
-let t=!1;
+document.body.appendChild(video);
 
+video.play().catch(err => {
+  console.error('Error al reproducir el video:', err);
+});
 </script>
